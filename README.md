@@ -1,62 +1,106 @@
-Rectificadores Trifásicos de 12 pulsos 
+# Three-Phase 12-Pulse Rectifiers
 
-Retificadores são aparelhos que realizam o trabalho de transformar corrente alternada em corrente contínua, existindo diversos modelos tais como os de meia-onda, onda-completa, trifásico de meia-onda, trifásico de onda completa (conhecido como de “seis pulsos”) e o trifásico onda completa complementar(conhecido como de “Doze Pulsos”).
-	Os retificadores utilizados atualmente no sistema de tração das linhas de metrô e trens, são retificadores de 12 pulsos, como se trata de um sistema menos conhecido e com funcionamento muito interessante, o texto abaixo descreve seu funcionamento.
+Rectifiers are devices that convert **alternating current (AC)** into **direct current (DC)**. There are several types, such as:
 
-Observações:Todas as formas de ondas e equações serão apresentadas utilizando um retificador a diodo livre e com carga puramente resistiva, apesar do sistema não ter essas condições, permite a apresentação simples e de fácil entendimento.
+- Half-wave rectifiers  
+- Full-wave rectifiers  
+- Three-phase half-wave rectifiers  
+- Three-phase full-wave rectifiers (*six-pulse*)  
+- Complementary three-phase full-wave rectifiers (*twelve-pulse*)  
 
-Os Sistemas Trifásicos com defasagem
-	Os sistemas trifásicos, são sistemas elétricos que utilizando-se de três fios, que apresentam suas tensões defasadas em 120º, um exemplo é visto na figura abaixo.
+Currently, rectifiers used in railway traction systems (such as metro and train lines) are typically **12-pulse rectifiers**. Since this is a less commonly understood system with very interesting behavior, this document describes its operation.
 
+---
 
-	Entretanto, para a criação de um sistema de retificação de 12 pulsos é necessário a criação de um sistema complementar com  um segundo secundário que apresenta a defasagem de ângulo em relação ao primeiro na ordem de 30º, esse pode ser visto na .
+## Notes
 
-Observe que na figura, surge um total de 6 ondas com 120º de defasagem entre seu grupo e 30º de defasagem entre os grupos.
+All waveforms and equations presented here consider:
 
-Os Retificadores Trifásicos de Seis e Doze Pulsos
-	Tendo a definição das tensões acima, é possível interpretar o funcionamento de um retificador de 6 e 12 pulsos.
+- Ideal diode rectifiers  
+- Purely resistive loads  
 
-	Se observarmos a conexão destes diodos, é possível observar que somente os valores máximos de tensão serão aproveitados e assim é possível observar as diferenças entre os 2 sistemas trifásicos acima:
+Although real systems do not meet these conditions, this simplification allows for clearer understanding.
 
-Nas figura, é possível observar que o sistema de 12 pulsos, tem uma área maior que o sistema de 6 pulsos, essa diferença nas áreas é convertido diretamente na eficiência dos sistemas em questão, esse valor afeta a eficiência do sistema porque a tensão eficaz de uma onda é relacionada diretamente pela área ocupada por ela.
-	É possível entender essa relação de formas simples, a tensão média DC é calculada quando no gráfico se descobre a área ocupada entre as ondas e espalha ela em uma forma retangular, onde o lado do retângulo no tempo  apresenta o mesmo tamanho, o outro lado o retângulo no eixo y, apresenta a tensão média na carga. A xxx representa a descoberta da área e como ela foi espalhada de forma retangular.
-   
-             
-Ripple em corrente contínua
-                          
-A maior vantagem entre os retificadores de 6 e 12 pulsos está no fato do seu ripple ser diminuído de forma abrupta, quando visualizamos a saída em um ciclo dos retificadores já é possível observar diferenças entre o ripple de cada um dos sistemas, como você pode  observar na figura.      
-                
-Entretanto, a real diferença da visualização, acontece quando utilizamos a visualização em um espaço maior de tempo, como na figura que apresenta a visualização com o tempo de um segundo. Como apresentado na figura.
-                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-Rectificadores Trifásicos de 12 pulsos 
+---
 
-Retificadores são aparelhos que realizam o trabalho de transformar corrente alternada em corrente contínua, existindo diversos modelos tais como os de meia-onda, onda-completa, trifásico de meia-onda, trifásico de onda completa (conhecido como de “seis pulsos”) e o trifásico onda completa complementar(conhecido como de “Doze Pulsos”).
-	Os retificadores utilizados atualmente no sistema de tração das linhas de metrô e trens, são retificadores de 12 pulsos, como se trata de um sistema menos conhecido e com funcionamento muito interessante, o texto abaixo descreve seu funcionamento.
+## Three-Phase Systems with Phase Shift
 
-Observações:Todas as formas de ondas e equações serão apresentadas utilizando um retificador a diodo livre e com carga puramente resistiva, apesar do sistema não ter essas condições, permite a apresentação simples e de fácil entendimento.
+Three-phase systems use three conductors with voltages phase-shifted by **120°** relative to each other.
 
-Os Sistemas Trifásicos com defasagem
-	Os sistemas trifásicos, são sistemas elétricos que utilizando-se de três fios, que apresentam suas tensões defasadas em 120º, um exemplo é visto na figura abaixo.
+To create a **12-pulse rectifier**, a second transformer secondary winding is added, introducing a **30° phase shift** relative to the first.
 
+As a result:
 
-	Entretanto, para a criação de um sistema de retificação de 12 pulsos é necessário a criação de um sistema complementar com  um segundo secundário que apresenta a defasagem de ângulo em relação ao primeiro na ordem de 30º, esse pode ser visto na .
+- Two groups of three-phase voltages are created  
+- Each group has **120° phase displacement internally**  
+- The groups are shifted by **30° relative to each other**  
 
-Observe que na figura, surge um total de 6 ondas com 120º de defasagem entre seu grupo e 30º de defasagem entre os grupos.
+This produces a total of **six waveforms**, enabling 12-pulse operation.
 
-Os Retificadores Trifásicos de Seis e Doze Pulsos
-	Tendo a definição das tensões acima, é possível interpretar o funcionamento de um retificador de 6 e 12 pulsos.
+---
 
-	Se observarmos a conexão destes diodos, é possível observar que somente os valores máximos de tensão serão aproveitados e assim é possível observar as diferenças entre os 2 sistemas trifásicos acima:
+## Six-Pulse vs Twelve-Pulse Rectifiers
 
-Nas figura, é possível observar que o sistema de 12 pulsos, tem uma área maior que o sistema de 6 pulsos, essa diferença nas áreas é convertido diretamente na eficiência dos sistemas em questão, esse valor afeta a eficiência do sistema porque a tensão eficaz de uma onda é relacionada diretamente pela área ocupada por ela.
-	É possível entender essa relação de formas simples, a tensão média DC é calculada quando no gráfico se descobre a área ocupada entre as ondas e espalha ela em uma forma retangular, onde o lado do retângulo no tempo  apresenta o mesmo tamanho, o outro lado o retângulo no eixo y, apresenta a tensão média na carga. A xxx representa a descoberta da área e como ela foi espalhada de forma retangular.
-   
-             
-Ripple em corrente contínua
-                          
-A maior vantagem entre os retificadores de 6 e 12 pulsos está no fato do seu ripple ser diminuído de forma abrupta, quando visualizamos a saída em um ciclo dos retificadores já é possível observar diferenças entre o ripple de cada um dos sistemas, como você pode  observar na figura.      
-                
-Entretanto, a real diferença da visualização, acontece quando utilizamos a visualização em um espaço maior de tempo, como na figura que apresenta a visualização com o tempo de um segundo. Como apresentado na figura.
-                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+By analyzing the diode connections, only the **maximum instantaneous voltages** are conducted.
+
+### Key differences:
+
+- The **12-pulse system** produces a waveform with a **larger effective area**  
+- This leads to **higher efficiency**  
+- The **RMS voltage** is directly related to the waveform area  
+---
+
+## Average DC Voltage
+
+The average DC voltage can be understood as:
+
+1. Calculate the area under the rectified waveform  
+2. Transform this area into an equivalent rectangle over time  
+3. The height of this rectangle represents the **average DC voltage**
+
+---
+
+## Ripple in DC Output
+
+The main advantage of a **12-pulse rectifier** over a **6-pulse rectifier** is the reduction of ripple.
+
+### Observations:
+
+- In a single cycle, ripple differences are already visible  
+- Over longer time periods, the difference becomes more evident  
+
+### Results:
+
+- Smoother DC output  
+- Higher ripple frequency  
+- Lower ripple amplitude  
+---
+
+## Advantages of 12-Pulse Rectifiers
+
+- Reduced harmonic distortion  
+- Improved power quality  
+- Lower filtering requirements  
+- Better performance in high-power applications  
+---
+
+## Applications
+
+- Railway traction systems (metro and trains)  
+- High-power industrial drives  
+- HVDC systems  
+- Heavy industry (mining, steel plants)  
+
+---
+
+## Summary
+
+A **12-pulse rectifier** improves significantly over a 6-pulse design by:
+
+- Combining two phase-shifted three-phase systems  
+- Increasing output quality  
+- Reducing ripple and harmonics  
+
+This makes it ideal for **high-power and high-performance electrical systems**.
+
+See my article in: ![https://www.linkedin.com/pulse/rectificadores-trif%25C3%25A1sicos-de-12-pulsos-lucas-de-oliveira-santana-03smf/?trackingId=3ufZTKNESlyrVgeb3Bzd7Q%3D%3Dhttps://www.linkedin.com/pulse/rectificadores-trif%25C3%25A1sicos-de-12-pulsos-lucas-de-oliveira-santana-03smf/?trackingId=3ufZTKNESlyrVgeb3Bzd7Q%3D%3D]
